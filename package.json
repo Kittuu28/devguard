@@ -22,8 +22,8 @@
     "fga:init": "tsx src/lib/fga/fga-init.ts"
   },
   "engines": {
-    "node": ">=18"
-  },
+  "node": "20"
+},
   "dependencies": {
     "@auth0/ai": "^6.0.0",
     "@auth0/ai-langchain": "^5.0.0",
