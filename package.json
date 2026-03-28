@@ -10,8 +10,8 @@
     "format": "prettier --write \"src\"",
     "all:dev": "run-p langgraph:dev dev",
     "all:start": "run-p langgraph:start start",
-    "langgraph:dev": "npx @langchain/langgraph-cli dev --port 54367",
-    "langgraph:start": "npx @langchain/langgraph-cli up",
+    "langgraph:dev": "node node_modules/@langchain/langgraph-cli/dist/cli/cli.mjs dev --port 54367",
+    "langgraph:start": "npx @langchain/langgraph-cli@0.0.18 up",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx src/lib/db/migrate.ts",
     "db:drop": "drizzle-kit drop",
@@ -75,6 +75,7 @@
     "zod-to-json-schema": "^3.24.5"
   },
   "devDependencies": {
+    "@langchain/langgraph-cli": "^0.0.18",
     "@next/bundle-analyzer": "^15.5.4",
     "@types/node": "^24.6.2",
     "@types/pdf-parse": "^1.1.5",
